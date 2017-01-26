@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.google.com/schemas/sitemap/0.84">
+{% for entry in sitemap %}
+    <sitemap>
+        <loc>{{ entry.location|e }}</loc>
+        <lastmod>{{ entry.lastmod }}</lastmod>
+    </sitemap>
+{% endfor %}
+</sitemapindex>
